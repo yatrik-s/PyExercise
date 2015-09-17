@@ -1,20 +1,21 @@
 # Exercise 5.1
-not_done = True
-count = 0
-sum = 0
+# Calculate total and average of numbers using list
+#
 
-while not_done:
-    input = raw_input("Enter a number:")
-    if input == "done":
+num_list = list()
+
+while True:
+    input = raw_input('Enter a number: ')
+    if input == 'done':
         break
-    try:
-        num = int(input)
-    except:
-        print "Invalid input"
-        continue
-    count = count + 1
-    sum = sum + num
+    else:
+        try:
+            num = int(input)
+        except:
+            print "Invalid input"
+            continue
+    num_list.append(num)
 
-if count > 0:
-    print "Sum: ", sum, "Count: ", count, "Average: ", sum/count
+if len(num_list) != 0:
+    print "Sum: ", sum(num_list) , "Count: ", len(num_list), "Average: ", sum(num_list)/len(num_list)
 
