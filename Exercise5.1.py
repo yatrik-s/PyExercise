@@ -17,5 +17,5 @@ while True:
     num_list.append(num)
 
 if len(num_list) != 0:
-    print "Sum: ", sum(num_list) , "Count: ", len(num_list), "Average: ", sum(num_list)/len(num_list)
-
+    print "Sum: ", sum(num_list), "Count: ", len(num_list), \
+          "Average: ", sum(num_list)/len(num_list)

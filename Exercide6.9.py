@@ -1,4 +1,4 @@
-# Exercide 6.9
+# Exercise 6.9
 data = 'X-DSPAM-Confidence: 0.8475'
 
 atpos = data.find(':')
