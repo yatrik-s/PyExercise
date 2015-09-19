@@ -15,5 +15,11 @@ def print_lines(n):
         print_lines(n - 1)
 
 
+def Infinite_recursion(n):
+    print n
+    Infinite_recursion(n + 1)
+
+
 print_lines(5)
 count_down(5)
+Infinite_recursion(1)
