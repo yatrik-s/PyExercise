@@ -22,4 +22,7 @@ while True:
         tcpCSocket.send('[%s]:%s' % (ctime(), data))
 
     tcpCSocket.close()
+    if not data:
+        print 'Received shutdown command...exiting'
+        break
 tcpSocket.close()
