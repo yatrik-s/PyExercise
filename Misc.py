@@ -31,3 +31,8 @@ while number < 5:
     number += 1
 else:
     print "number {0} is no longer less than 5".format(number)
+
+# Creating list of numbers using list comprehension
+# Requires input file 'Numbers.txt'
+num = [int(line) for line in open('Numbers.txt')]
+print num
