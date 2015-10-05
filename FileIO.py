@@ -23,3 +23,8 @@ if f is None:
 f.write('# Sampple readme file created by FileIO.py\n')
 f.write('This is another readme file.\n')
 f.close()
+
+# File output using print
+f = open('myFile.txt', 'w')
+print >>f, 'Hello world printed to file using print statement'
+f.close()
